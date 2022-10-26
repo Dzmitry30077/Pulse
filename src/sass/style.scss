@@ -1,0 +1,27 @@
+@import 'base/variables';
+* {
+  font-family: 'MuseoModerno', sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+@import 'base/variables';
+
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/advantages';
+@import 'blocks/section-title';
+@import 'blocks/consultation';
+@import 'blocks/forms';
+@import 'blocks/carousel';
+@import 'blocks/catalog';
+
+
+@import 'base/media';
