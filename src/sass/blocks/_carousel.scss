@@ -45,13 +45,35 @@
     list-style-type: none;
     li {
       button {
+        position: relative;
         background-color: transparent;
         border: none;
         border-radius: 50%;
+        visibility: hidden;
+        &:before {
+           visibility: visible;
+           font-family: 'slick';
+           font-size: 20px;
+           line-height: 20px;
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 20px;
+           height: 20px;
+           content: '•'; /* <-- Вот этот символ */
+           text-align: center;
+           color: black;
+           -webkit-font-smoothing: antialiased;
+           -moz-osx-font-smoothing: grayscale;
+         }
       }
     }
     .slick-active {
-      background: red;
+      button {
+        &:before {
+          color: red
+        }
+      }
     }
   }
 }

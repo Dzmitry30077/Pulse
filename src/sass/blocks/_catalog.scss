@@ -10,6 +10,7 @@
     align-items: center;
   }
   &__tab {
+    z-index: 22;
     width: 220px;
     height: 50px;
     margin: 0 5px;
@@ -25,7 +26,7 @@
     transition: .3s all;
     &:hover {
       box-shadow: 3px 3px 20px $main-red;
-      color: #000;
+      color: white;
     }
     div {
       transform: skewX(25deg);
@@ -133,6 +134,7 @@
       transition: 0.5s all;
       &_active {
         margin-left: 0px;
+        padding-right: 40px;
         transform: translateX(-100%);
       }
       li {
